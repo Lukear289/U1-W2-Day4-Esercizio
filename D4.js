@@ -56,9 +56,13 @@ console.log(boundary(155));
  La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con 
  "EPICODE" allora deve ritornare la stringa originale senza alterarla.
 */
-const epify= function("EPICODE")
-
-
+const epify = function (stringa) {
+  if (stringa.indexOf('EPICODE') === 0) {
+    return stringa;
+  }
+  return EPICODE;
+};
+console.log(epify('EPICODE'));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 6
